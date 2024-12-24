@@ -1,0 +1,200 @@
+/* здесь нужно написать media запросы */
+/*======= Media Запросы =======*/
+@media (max-width: 799px) {
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -300px;
+		height: 100vh;
+		width: 300px;
+		background-color: #f2f1ef; /*Цвет фона Navbar при маленьких устройствах #*/
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+		padding: 80px 0 0 10px;
+		transition: 0.4s;
+	}
+	#navbar.active {
+		right: 0;
+	}
+	#navbar li {
+		margin-bottom: 25px;
+	}
+	#mobile {
+		display: flex;
+		align-items: center;
+	}
+	#mobile i {
+		color: #463527;
+		font-size: 24px;
+		padding-left: 20px;
+	}
+	#close {
+		display: initial;
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		color: #222;
+		font-size: 24px;
+	}
+	#lg-bag {
+		display: none;
+	}
+	#hero {
+		height: 60vh;
+		padding: 0 80px;
+		background-position: top 30% right 40%;
+	}
+	#product1 .pro-container {
+		justify-content: center;
+	}
+	#product1 .pro {
+		margin: 15px;
+	}
+	#banner {
+		height: 50vh;
+	}
+	.newsletter .form {
+		width: 70%;
+	}
+}
+
+@media (max-width: 477px) {
+	#header {
+		padding: 10px 30px;
+	}
+	#hero {
+		padding: 0 20px;
+		background-position: 55%;
+	}
+	h1 {
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	#product1 .pro {
+		width: 100%;
+	}
+	#banner {
+		height: 40vh;
+	}
+	.newsletter .form {
+		padding: 40px 20px;
+	}
+	.newsletter .form {
+		width: 100%;
+	}
+	.footer .copyright {
+		text-align: start;
+	}
+
+	/* Product */
+	#prodetails {
+		display: flex;
+		flex-direction: column;
+	}
+	#prodetails .single_pro-image {
+		width: 100%;
+		margin-right: 0;
+	}
+	#prodetails .single-pro-details {
+		width: 100%;
+	}
+	/* страница 4 бутики */
+	#boutique {
+		padding: 100px 20px 0 20px;
+	}
+	#boutique .boutique-box {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	#boutique .boutique-img {
+		width: 100%;
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	#boutique .boutiques-details {
+		width: 100%;
+	}
+	/* Страница 6 Поиск Дилера */
+	#search_details {
+		flex-direction: column;
+	}
+	#search_details .details {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#search_details .map {
+		width: 100%;
+	}
+}
+/* ============= */
+/* ============= */
+/* ============= */
+@media (max-width: 550px) {
+	#navbar {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		top: 0;
+		right: -280px; /* Slightly reduced width */
+		height: 100vh;
+		width: 280px; /* Slightly reduced width */
+		background-color: #f2f1ef;
+		box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+		padding: 60px 0 0 10px; /* Reduced top padding */
+		transition: 0.4s;
+	}
+	#navbar.active {
+		right: 0;
+	}
+	#navbar li {
+		margin-bottom: 20px; /* Reduced bottom margin */
+	}
+	#mobile {
+		display: flex;
+		align-items: center;
+	}
+	#mobile i {
+		color: #463527;
+		font-size: 22px; /* Reduced font size */
+		padding-left: 15px; /* Reduced left padding */
+	}
+	#close {
+		display: initial;
+		position: absolute;
+		top: 20px; /* Slightly adjusted top position */
+		left: 20px; /* Slightly adjusted left position */
+		color: #222;
+		font-size: 22px; /* Reduced font size */
+	}
+	#lg-bag {
+		display: none;
+	}
+	#hero {
+		height: 50vh; /* Reduced height */
+		padding: 0 40px; /* Reduced left/right padding */
+		background-position: top 30% right 40%; /* keeping the same background position for the view */
+	}
+	#product1 .pro-container {
+		justify-content: center; /* Keeping the same property */
+	}
+	#product1 .pro {
+		margin: 10px; /* Reduced margin */
+	}
+	#banner {
+		height: 40vh; /* Reduced height */
+	}
+	.newsletter .form {
+		width: 90%; /* Increased width */
+	}
+}
